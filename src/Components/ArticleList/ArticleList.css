@@ -1,0 +1,41 @@
+.article-list {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.article-list__loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border: 4px solid grey;
+  border-right: transparent 4px solid;
+  border-radius: 64px;
+  animation: rotate infinite ease-in-out 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .article-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+}
