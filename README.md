@@ -1,5 +1,12 @@
 # Blackbullion / Collwyn tech test
 
+## Starting the app
+
+1. Clone this repository
+2. Download and install [node](https://nodejs.org/en) if you haven't already
+3. Run `npm install` in the root directory of this app
+4. Run `npm start` - the app will start on port `3000`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -16,6 +23,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run test:coverage`
+
+Runs tests and produces a coverage report, I aimed to have 90+ coverage for non-boilerplate files.
 
 ### `npm run build`
 
